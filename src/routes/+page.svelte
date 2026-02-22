@@ -9,6 +9,7 @@ This is your page!
   import Image from '$lib/components/Image.svelte';
   import RelatedLinks from '$lib/components/RelatedLinks.svelte';
   import WhyCare from '$lib/components/WhyCare.svelte';
+  import AuthorBio from '$lib/components/AuthorBio.svelte';
 
   // Article metadata
   let headline = 'How $25 and 24 hours can make a wedding official';
@@ -164,6 +165,17 @@ This is your page!
     </p>
 
   </ArticleBody>
+
+  <!-- Author Bio: Brief description of who wrote this article -->
+  <AuthorBio
+    authorPhoto="/jack.jpeg"
+    authorName="Jack Walker"
+    authorDesc="Jack Walker is a journalist based in New York City and graduate student at the Craig Newmark School of Journalism. Before moving to New York, Jack worked as a journalist in West Virginia for two years and helped run Brown University's student newspaper."
+    authorTwitter="https://x.com/jacktmwalker"
+    authorEmail="jackwalkerwvgmail.com"
+    authorLinkedIn="https://www.linkedin.com/in/jacktmwalker/"
+    authorLink="https://jackwalker.xyz"
+  />
 
   <!-- Related Stories: Links to other articles -->
   <RelatedLinks
