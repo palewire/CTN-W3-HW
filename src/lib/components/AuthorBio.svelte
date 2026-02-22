@@ -6,6 +6,15 @@ An infobox featuring a photo, name and description of the article's author.
 Also includes links to author's social media accounts.
 
 USAGE EXAMPLE:
+  <AuthorBio
+    authorPhoto="/jack.jpeg"
+    authorName="Jack Walker"
+    authorDesc="Jack Walker is a journalist based in New York City and graduate student at the Craig Newmark School of Journalism. Before moving to New York, Jack worked as a journalist in West Virginia for two years and helped run Brown University's student newspaper."
+    authorTwitter="https://x.com/jacktmwalker"
+    authorEmail="jackwalkerwvgmail.com"
+    authorLinkedIn="https://www.linkedin.com/in/jacktmwalker/"
+    authorLink="https://jackwalker.xyz"
+  />
 -->
 
 <script>
