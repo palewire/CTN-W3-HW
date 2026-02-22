@@ -10,6 +10,7 @@ This is your page!
   import RelatedLinks from '$lib/components/RelatedLinks.svelte';
   import WhyCare from '$lib/components/WhyCare.svelte';
   import AuthorBio from '$lib/components/AuthorBio.svelte';
+  import EmbedPDF from '$lib/components/EmbedPDF.svelte';
 
   // Article metadata
   let headline = 'How $25 and 24 hours can make a wedding official';
@@ -163,6 +164,14 @@ This is your page!
     <p>
       "I actually had the opportunity to basically speak their vows to each other on behalf of them," she said. "I didn't go on to become an officiant after the fact. But it was certainly a nice memory."
     </p>
+
+  <EmbedPDF
+    pdfLink="/one-day-pdf.pdf"
+    pdfTitle="DOWNLOAD HERE: One-Day Officiant License Application"
+    pdfDateObtained="December 17, 2025"
+    pdfSource="New York City Clerk's Office"
+    pdfAltDescription="A table showing the number of one-day officiant licenses issued in New York City from April 2023 to October 2025. The table shows a steady increase in licenses issued, with a total of 275 licenses issued in October 2025."
+    />
 
   </ArticleBody>
 
