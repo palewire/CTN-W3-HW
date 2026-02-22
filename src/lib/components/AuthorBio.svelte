@@ -18,7 +18,16 @@ USAGE EXAMPLE:
 -->
 
 <script>
+  import { base } from '$app/paths';
+
   let { authorPhoto, authorName, authorDesc, authorTwitter, authorEmail, authorLinkedIn, authorLink } = $props();
+  // Prepend base path to local images (those starting with /)
+  // but not to external URLs (http://, https://, //, data:)
+  const resolvedSrc = $derived(
+    authorPhoto.startsWith('/') && !authorPhoto.startsWith('//') 
+      ? `${base}${authorPhoto}` 
+      : authorPhoto
+  );
 </script>
 
 <div class="authorContainer">
@@ -27,7 +36,7 @@ USAGE EXAMPLE:
     <!-- Infobox Navigation -->
     <nav class="infobox-nav" aria-label="Infobox navigation">
     <div class="side1">
-        <img class="authorImg" src={authorPhoto} alt="A portrait photo of {authorName}."/>
+        <img class="authorImg" src={resolvedSrc} alt="A portrait photo of {authorName}."/>
         <br><p>Author: <b><a href={authorLink}>{authorName}</a></b></p></div>
         <span class="infobox-divider"></span>
         <div class="side2">

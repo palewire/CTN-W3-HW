@@ -177,7 +177,7 @@ This is your page!
 
   <!-- Author Bio: Brief description of who wrote this article -->
   <AuthorBio
-    authorPhoto="/jack.jpeg"
+    authorPhoto="jack.jpeg"
     authorName="Jack Walker"
     authorDesc="Jack Walker is a journalist based in New York City and graduate student at the Craig Newmark School of Journalism. Before moving to New York, Jack worked as a journalist in West Virginia for two years and helped run Brown University's student newspaper."
     authorTwitter="https://x.com/jacktmwalker"
